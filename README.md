@@ -8,9 +8,14 @@ Personally preffered the Linus Trovaldos Approach(Mind the spelling).
 * For any new OS maker.
 
 ## Hash Table
+* Works on Strings
 * This code I created 3 years ago
 * This hash table is based on collision controllers
 * If collision occurs it adds to the next element in linked list
 * So both deletion and search are adjusted accordingly
 * It use strings(character array) by hashing them by thier int conversions
 * We can expand the hash table by changing the ``HashTableSize`` in the code
+
+## Linked List Menu
+* This code is for Linked List, which has well laid out menu of the terms.
+* A code I wrote way back to Test my skills
