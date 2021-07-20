@@ -20,7 +20,8 @@ Personally preffered the Linus Trovaldos Approach(Mind the spelling).
 * This code is for Linked List, which has well laid out menu of the terms.
 * A code I wrote way back to Test my skills
 
-## New Template based stack code
+## New Template based Codes
 * Templates are the raw structure which supports multi type codes and reduces code rewriting for different type.
 * C++ templates help the programmer to reuse his pre-written code in for applications that require them.
 * Stack is required for many things.
+* Queue is also implemented in as template to aid the development of further applications.
