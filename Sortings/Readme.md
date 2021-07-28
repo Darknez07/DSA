@@ -13,3 +13,8 @@ best case.
 * **Ignoring vector display time and filling time**
 * *With 20,000 elements it took 3.94 secs*
 * *With 2,00,000 elements it took 5000 secs*
+## Insertion sort
+* Same as bubble sort but this time we find the place to insert the picked element in array and then swap
+* Using a back reading approach to read from the back of the list to find the correct spot and insert
+* It is most efficient algorithm to check if list is already sorted(For list of few elements) Gives O(n) time complexity.
+* Sometimes works better or at lower end of O(n^2).
