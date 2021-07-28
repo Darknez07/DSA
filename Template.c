@@ -80,7 +80,7 @@ void Insert_at_given_pos(struct Node **p,int value,int pos)
 		r->data=value;
 		temp->link=r;
 		r->link=NULL;
-	}		
+	}
 }
 void Insert_after_entered_Element(struct Node **p,int value,int k)
 {
@@ -228,7 +228,7 @@ void Display(struct Node **n)
 {
 	struct Node *temp;
 	temp=(struct Node *)malloc(sizeof(struct Node));
-	temp=*n;	
+	temp=*n;
 	while(temp->link!=NULL)
 	{
 		printf("%d---->",temp->data);
