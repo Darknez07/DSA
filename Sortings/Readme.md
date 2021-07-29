@@ -18,3 +18,8 @@ best case.
 * Using a back reading approach to read from the back of the list to find the correct spot and insert
 * It is most efficient algorithm to check if list is already sorted(For list of few elements) Gives O(n) time complexity.
 * Sometimes works better or at lower end of O(n^2).
+## Selection sort
+* Bascially find the minimum from unsorted array and starting swapping from the start.
+* Thus, with this we attain run time of O(n^2), n for finding the minimum and n for swapping till the end.
+* Using selection sort is a much worse than bubble sort because we find the minimum every time.
+* Adding over head to each type of array either sorted or unsorted.
