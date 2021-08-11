@@ -1,6 +1,6 @@
 #include "stck.hpp"
-string operators = "*/+-";
 using namespace std;
+string operators = "*/+-";
 bool HighPrec(char ch, char ch2){
     if(ch == '*' && ch2 == '/')
         return false;
