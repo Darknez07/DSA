@@ -4,7 +4,7 @@ string operators = "*/+-";
 bool HighPrec(char ch, char ch2){
     if(ch == '*' && ch2 == '/')
         return false;
-    if((ch == '+' || ch == '-') || (ch =='*' || ch2 == '/'))
+    if((ch == '+' || ch == '-') && (ch2=='*' || ch2 == '/'))
         return false;
     return true;
 }
