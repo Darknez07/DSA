@@ -37,7 +37,7 @@ void Bubble_sort(vector<int> & v){
     }
 }
 int main(){
-    int n = 200000;
+    int n = 20;
     vector<int> v(n);
     srand(time(NULL));
     for(int i=0; i<n; i++)
@@ -45,14 +45,7 @@ int main(){
     cout<<"Before Sorting: "<<endl;
     for(int i=0; i<n; i++)
         cout<<v[i]<<" ";
-
-    // Time calculation of code
-    clock_t begin = clock();
     Bubble_sort(v);
-    clock_t end = clock();
-    double ans = double(end - begin)/CLOCKS_PER_SEC;
-
-    cout<<endl<<ans<<endl;
     cout<<"\nAfter Sorting: "<<endl;
     for(int i=0;i<n;i++)
         cout<<v[i]<<" ";
