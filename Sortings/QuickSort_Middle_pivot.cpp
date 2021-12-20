@@ -36,7 +36,7 @@ int main(){
     srand(time(NULL));
     vector<int> v(n);
     for(int i = 0; i < n; i++){
-        v[i] = rand() % (n + n + n + n);
+        v[i] = rand() % (4*n);
     }
     cout<<"Before Sorting: "<<endl;
     Show(v);
