@@ -11,11 +11,11 @@ class CalculatorEngine{
         if(toDo == '+')
             value+=keep;
         else if(toDo == '-')
-            value-=keep;
+            value = keep - value;
         else if(toDo == '*')
             value*=keep;
         else if(toDo == '/')
-            value/=keep;
+            value = keep/value;
         keep = 0;
     }
     public void clear(){
