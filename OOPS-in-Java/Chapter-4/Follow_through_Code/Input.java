@@ -1,6 +1,4 @@
-package Follow_through_Code;
 import java.io.*;
-
 class CalculatorInput{
     BufferedReader stream;
     CalculatorEngine engine;
@@ -20,6 +18,9 @@ class CalculatorInput{
                 else if(c == '-') engine.subtract();
                 else if(c == '*') engine.multiply();
                 else if(c == '/') engine.divide();
+                // Answer to Q2.
+                else if(c == '!') engine.factorial();
+                else if(c == '^') engine.square();
                 else if(c >= '0' && c <= '9') engine.digit(c - '0');
                 else if(c == '=') engine.compute();
                 else if(c == 'c' || c == 'C') engine.clear();
