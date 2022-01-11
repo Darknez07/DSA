@@ -1,4 +1,3 @@
-package Follow_through_Code;
 import java.awt.*;
 import java.awt.event.*;
 class CalculatorFrame extends Frame implements ActionListener{
@@ -30,11 +29,16 @@ class CalculatorFrame extends Frame implements ActionListener{
         bottom.add(b = new Button("0"));b.addActionListener(this);
         bottom.add(b = new Button("="));b.addActionListener(this);
         bottom.add(b = new Button("/"));b.addActionListener(this);
+        // Factorial,Power of 2
+        bottom.add(b = new Button("!"));b.addActionListener(this);
+        bottom.add(b = new Button("^"));b.addActionListener(this);
+        bottom.add(b = new Button("E"));b.addActionListener(this);
+        bottom.add(b = new Button("N"));b.addActionListener(this);
         setLayout(new BorderLayout());
         add("North",top);
         add("South",bottom);
         addWindowListener(listener);
-        setSize(200, 180);
+        setSize(200, 200);
         setVisible(true);
     }
     public void actionPerformed(ActionEvent e){
@@ -43,9 +47,14 @@ class CalculatorFrame extends Frame implements ActionListener{
         else if(ch == '-') engine.subtract();
         else if(ch == '*') engine.multiply();
         else if(ch == '/') engine.divide();
+        // Integration of the event into
+        // the code
+        else if(ch == '!') engine.factorial();
+        else if(ch == '^') engine.square();
         else if(ch >= '0' && ch <= '9') engine.digit(ch - '0');
         else if(ch == '=') engine.compute();
         else if(ch == 'c' || ch == 'C') engine.clear();
+        else if(ch == 'E' || ch == 'e') System.exit(0);
         display.setText(Integer.toString(engine.display()));
     }
     public static void main(String[] args) {
