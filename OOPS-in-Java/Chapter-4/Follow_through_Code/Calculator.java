@@ -1,12 +1,16 @@
-package Follow_through_Code;
 class CalculatorEngine{
     int value,keep;
     char toDo;
     CalculatorEngine(){clear();}
+    // Q1 and Q2 factorial is below
+    public int fact(int n){return n <= 1 ? 1:n*fact(n - 1); }
     public void add(){binaryOperation('+');}
     public void subtract(){binaryOperation('-');}
     public void multiply(){binaryOperation('*');}
     public void divide(){binaryOperation('/');}
+    // New functions for Q1 and Q2
+    public void factorial(){toDo = '!';value = fact(value);}
+    public void square(){toDo = '^';value*=value;}
     public void compute(){
         if(toDo == '+')
             value+=keep;
